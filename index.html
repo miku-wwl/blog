@@ -9,6 +9,8 @@
 
 </head>
 <body>
+
+
 <!--导航-->
 <nav class="ui inverted attached segment m-padded-tb-mini">
     <div class="ui contain">
@@ -17,6 +19,7 @@
             <a href="#" class="m-item item m-mobile-hide"><i class="home icon"> </i>首页</a>
             <a href="#" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
             <a href="#" class="m-item item m-mobile-hide"><i class="tag icon"></i>标签</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="clone icon"></i>归档</a>
             <a href="#" class="m-item item m-mobile-hide"><i class="info icon"></i>关于我</a>
             <div class="right m-item item m-mobile-hide">
                 <div class="ui icon inverted transparent input">
@@ -388,48 +391,47 @@
 
 
 
-<!--底部-->
+
 <footer class="ui inverted vertical center aligned segment m-padded-tb-massive">
-   <div class="ui center aligned/container">
-       <div class="ui inverted center aligned divided grid stackable">
-
-
-           <div class="four wide column ">
-               <h4 class="ui inverted header">最新播客</h4>
-               <div class="ui inverted link list">
-                   <a href="#" class="href item">用户故事</a>
-                   <a href="#" class="href item">占位</a>
-                   <a href="#" class="href item">占位</a>
-               </div>
-           </div>
-           <div class="five wide column ">
-               <h4 class="ui inverted header">最新播客</h4>
-               <div class="ui inverted link list">
-                   <a href="#" class="href item">用户故事</a>
-                   <a href="#" class="href item">占位</a>
-                   <a href="#" class="href item">占位</a>
-               </div>
-           </div>
-
-
-           <div class="seven wide column center aligned">
-               <h4 class="ui inverted header">最新播客</h4>
-               <p class=" m-text-spaced  m-opacity-mini">占位占位占位占位占位占位占位占位占位占位占位占位占位占位占位占位占位占位占位占位占位占位占位占位占位占位占位占位占位占位占位占位占位占位占位占位占位</p>
-
-           </div>
-
-
-       </div>
-       <br>
-       <br>
-
-   </div>
-        <div class="ui inverted section divider stackable"></div>
-        <p class="m-text-thin  m-text-spaced m-text-lined m-opacity-mini" >Copyright© 2021.Weilai Wang</p>
-   </div>
-
-
-</footer>
+    <div class="ui center aligned/container">
+        <div class="ui inverted center aligned divided grid stackable">
+ 
+ 
+            <div class="four wide column ">
+                <h4 class="ui inverted header">最新播客</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="href item">用户故事</a>
+                    <a href="#" class="href item">用户故事</a>
+                    <a href="#" class="href item">用户故事</a>
+                </div>
+            </div>
+            <div class="five wide column ">
+                <h4 class="ui inverted header">联系我</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="href item">Email: 569144003@qq.com</a>
+                    <a href="#" class="href item">QQ: 569144003</a>
+                </div>
+            </div>
+ 
+ 
+            <div class="seven wide column center aligned">
+                <h4 class="ui inverted header">播客</h4>
+                <p class=" m-text-spaced  m-opacity-mini">这是我的个人博客，会分享关于编程，写作，思考相关的任何内容，希望可以给来到这里的人有所帮助</p>
+ 
+            </div>
+ 
+ 
+        </div>
+        <br>
+        <br>
+ 
+    </div>
+         <div class="ui inverted section divider stackable"></div>
+         <p class="m-text-thin  m-text-spaced m-text-lined m-opacity-tiny" >Copyright© 2021.Weilai Wang</p>
+    </div>
+ 
+ 
+ </footer>
 
 
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
@@ -444,7 +446,59 @@
     );
 
 
+
+
 </script>
+
+
+
+<script type="text/javascript"> 
+ 
+    /* 鼠标点击特效 */ 
+     var a_idx = 0; 
+     jQuery(document).ready(function($) { 
+         $("body").click(function(e) { 
+             var a = new Array("坏坏","吼吼吼","哈哈哈","小坏坏","坏坏不坏","冲冲冲","给个关注吧","给宁比❤","哇哈哈哈"); 
+             var $i = $("<span/>").text(a[a_idx]); 
+             a_idx = (a_idx + 1) % a.length; 
+             var x = e.pageX, 
+             y = e.pageY; 
+             $i.css({ 
+                 "z-index": 999999999999999999999999999999999999999999999999999999999999999999999, 
+                 "top": y - 20, 
+                 "left": x, 
+                 "position": "absolute", 
+                 "font-weight": "bold", 
+                 "color": "rgb(72,85,137)" 
+             }); 
+             $("body").append($i); 
+             $i.animate({ 
+                 "top": y - 180, 
+                 "opacity": 0 
+             }, 
+             1500, 
+             function() { 
+                $i.remove(); 
+             }); 
+         }); 
+     }); 
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.0.4/lib/L2Dwidget.min.js"></script>
+<script type="text/javascript">
+L2Dwidget.init();
+</script>
+
+
+<!-- 背景动画 -->
+<canvas id="c_n9" width="1920" height="990" style="position: fixed; top: 0px; left: 0px; z-index: -1; opacity: 0.5;"></canvas>
+<script src="https://files.cnblogs.com/files/jingmoxukong/canvas-nest.min.js" defer></script>
+
+
+
+
+
 
 
 </body>

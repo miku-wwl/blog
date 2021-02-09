@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4bef003-4fbf-4dd3-9111-4e70e63b6b64" name="Default Changelist" comment="" />
+    <list default="true" id="b4bef003-4fbf-4dd3-9111-4e70e63b6b64" name="Default Changelist" comment="">
+      <change beforePath="D:/WebstormProjects/blog/.idea/workspace.xml" beforeDir="false" afterPath="D:/WebstormProjects/blog/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="D:/WebstormProjects/blog/index.html" beforeDir="false" afterPath="D:/WebstormProjects/blog/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +16,9 @@
         <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="D:/WebstormProjects/blog" />
   </component>
   <component name="ProjectId" id="1mmP5s9bW4nz4JDkRCj9PupRAqK" />
   <component name="ProjectViewState">
@@ -42,7 +48,11 @@
       <workItem from="1610102493908" duration="29000" />
       <workItem from="1610782432214" duration="12193000" />
       <workItem from="1610885241995" duration="3945000" />
-      <workItem from="1611200997990" duration="739000" />
+      <workItem from="1611200997990" duration="815000" />
+      <workItem from="1612490423853" duration="39000" />
+      <workItem from="1612490490967" duration="14000" />
+      <workItem from="1612490554161" duration="3000" />
+      <workItem from="1612490576153" duration="20000" />
     </task>
     <servers />
   </component>
