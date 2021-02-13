@@ -48,6 +48,17 @@
     padding-top: 5em !important;
     padding-bottom: 5em !important;
 }
+.m-padded-mini{
+    padding: 0.2em !important;
+}
+.m-padded-tiny{
+    padding: 0.3em  !important;
+}
+
+.m-padded{
+    padding:  1em !important;
+}
+
 
 
 /*font*/
@@ -121,6 +132,21 @@ margin-bottom: 0.5em im !important;
 .m-mobile-show{
     display: none!important;;
 }
+
+/* ----position--- */
+.m-fixed{
+    position:fixed !important;
+    z-index: 10 !important;
+}
+.m-right-bottom{
+    bottom:0 !important;
+    right:0 !important;
+}
+.m-left-bottom{
+    bottom:0 !important;
+    left:0 !important;
+}
+
 
 @media screen and (max-width: 768px) {
     .m-mobile-hide{
