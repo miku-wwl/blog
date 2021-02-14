@@ -10,12 +10,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 public class indexController {
     @GetMapping("/")
     public String index(){
-//      //  int a = 9/0;
-//        String blog = null;
-//        if (blog == null){
-//
-//            throw new NoFoundException("博客不存在");
-//        }
         System.out.println("------------index-------------");
         return "index";
     }
@@ -24,4 +18,27 @@ public class indexController {
 
         return "blog";
     }
+    @GetMapping("/about")
+    public String about(){
+
+        return "about";
+    }
+    @GetMapping("/archives")
+    public String archieves(){
+
+        return "archives";
+    }
+    @GetMapping("/tags")
+    public String tags(){
+
+        return "tags";
+    }
+    @GetMapping("/types")
+    public String types(){
+
+        return "types";
+    }
+
+
+
 }

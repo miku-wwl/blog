@@ -6225,3 +6225,292 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template "fragm
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
+2021-02-14 19:35:15.044  INFO 15656 --- [restartedMain] com.weilai.blog.BlogApplication          : Starting BlogApplication on DESKTOP-AP8AJHJ with PID 15656 (started by 君上 in C:\Users\君上\IdeaProjects\blog\blog_Weilai)
+2021-02-14 19:35:15.044  INFO 15656 --- [restartedMain] com.weilai.blog.BlogApplication          : The following profiles are active: dev
+2021-02-14 19:35:15.304  INFO 15656 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5bf8ccc9: startup date [Sun Feb 14 19:35:15 AEDT 2021]; root of context hierarchy
+2021-02-14 19:35:17.164  INFO 15656 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2021-02-14 19:35:17.174  INFO 15656 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-14 19:35:17.174  INFO 15656 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2021-02-14 19:35:17.284  INFO 15656 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-14 19:35:17.284  INFO 15656 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1980 ms
+2021-02-14 19:35:17.454  INFO 15656 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-02-14 19:35:17.464  INFO 15656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-02-14 19:35:17.464  INFO 15656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-02-14 19:35:17.464  INFO 15656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-02-14 19:35:17.464  INFO 15656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-02-14 19:35:18.444  INFO 15656 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-02-14 19:35:18.464  INFO 15656 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-02-14 19:35:18.554  INFO 15656 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2021-02-14 19:35:18.554  INFO 15656 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-02-14 19:35:18.554  INFO 15656 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2021-02-14 19:35:18.614  INFO 15656 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-02-14 19:35:18.824  INFO 15656 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-02-14 19:35:18.994  INFO 15656 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2021-02-14 19:35:19.014  INFO 15656 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-14 19:35:19.474  INFO 15656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5bf8ccc9: startup date [Sun Feb 14 19:35:15 AEDT 2021]; root of context hierarchy
+2021-02-14 19:35:19.564  INFO 15656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.index()
+2021-02-14 19:35:19.564  INFO 15656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.blog()
+2021-02-14 19:35:19.574  INFO 15656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-02-14 19:35:19.574  INFO 15656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-02-14 19:35:19.614  INFO 15656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-02-14 19:35:19.614  INFO 15656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-02-14 19:35:19.634  INFO 15656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2021-02-14 19:35:19.654  INFO 15656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-02-14 19:35:20.374  INFO 15656 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-14 19:35:20.424  INFO 15656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-02-14 19:35:20.474  INFO 15656 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2021-02-14 19:35:20.484  INFO 15656 --- [restartedMain] com.weilai.blog.BlogApplication          : Started BlogApplication in 5.94 seconds (JVM running for 7.808)
+2021-02-14 19:35:42.933  INFO 15656 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-02-14 19:35:42.935  INFO 15656 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-02-14 19:35:42.996  INFO 15656 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 53 ms
+2021-02-14 19:35:43.107  INFO 15656 --- [http-nio-8080-exec-1] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.index', args=[]}
+2021-02-14 19:35:43.110  INFO 15656 --- [http-nio-8080-exec-1] com.weilai.blog.aspect.LogAspect         : Result:index
+2021-02-14 19:36:23.317  INFO 15656 --- [http-nio-8080-exec-2] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/blog', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.blog', args=[]}
+2021-02-14 19:36:23.318  INFO 15656 --- [http-nio-8080-exec-2] com.weilai.blog.aspect.LogAspect         : Result:blog
+2021-02-14 19:46:14.916  INFO 15656 --- [Thread-16] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5bf8ccc9: startup date [Sun Feb 14 19:35:15 AEDT 2021]; root of context hierarchy
+2021-02-14 19:46:14.920  INFO 15656 --- [Thread-16] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-02-14 19:46:14.927  INFO 15656 --- [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-14 19:46:18.118  INFO 15656 --- [restartedMain] com.weilai.blog.BlogApplication          : Starting BlogApplication on DESKTOP-AP8AJHJ with PID 15656 (started by 君上 in C:\Users\君上\IdeaProjects\blog\blog_Weilai)
+2021-02-14 19:46:18.119  INFO 15656 --- [restartedMain] com.weilai.blog.BlogApplication          : The following profiles are active: dev
+2021-02-14 19:46:18.121  INFO 15656 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@630e7053: startup date [Sun Feb 14 19:46:18 AEDT 2021]; root of context hierarchy
+2021-02-14 19:46:19.477  INFO 15656 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2021-02-14 19:46:19.478  INFO 15656 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-14 19:46:19.478  INFO 15656 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2021-02-14 19:46:19.506  INFO 15656 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-14 19:46:19.507  INFO 15656 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1386 ms
+2021-02-14 19:46:19.607  INFO 15656 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-02-14 19:46:19.607  INFO 15656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-02-14 19:46:19.608  INFO 15656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-02-14 19:46:19.608  INFO 15656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-02-14 19:46:19.608  INFO 15656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-02-14 19:46:20.192  INFO 15656 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-02-14 19:46:20.192  INFO 15656 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-02-14 19:46:20.465  INFO 15656 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-02-14 19:46:20.476  INFO 15656 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2021-02-14 19:46:20.477  INFO 15656 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-14 19:46:20.966  INFO 15656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@630e7053: startup date [Sun Feb 14 19:46:18 AEDT 2021]; root of context hierarchy
+2021-02-14 19:46:21.041  INFO 15656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.index()
+2021-02-14 19:46:21.042  INFO 15656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.types()
+2021-02-14 19:46:21.042  INFO 15656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.tags()
+2021-02-14 19:46:21.043  INFO 15656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.blog()
+2021-02-14 19:46:21.043  INFO 15656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/archives],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.archieves()
+2021-02-14 19:46:21.043  INFO 15656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/about],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.about()
+2021-02-14 19:46:21.048  INFO 15656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-02-14 19:46:21.049  INFO 15656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-02-14 19:46:21.101  INFO 15656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-02-14 19:46:21.102  INFO 15656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-02-14 19:46:21.125  INFO 15656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2021-02-14 19:46:21.142  INFO 15656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-02-14 19:46:21.954  INFO 15656 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-14 19:46:22.003  INFO 15656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-02-14 19:46:22.018  INFO 15656 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2021-02-14 19:46:22.021  INFO 15656 --- [restartedMain] com.weilai.blog.BlogApplication          : Started BlogApplication in 4.053 seconds (JVM running for 669.344)
+2021-02-14 19:46:35.638  INFO 15656 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-02-14 19:46:35.639  INFO 15656 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-02-14 19:46:35.653  INFO 15656 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2021-02-14 19:46:35.656  INFO 15656 --- [http-nio-8080-exec-1] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.index', args=[]}
+2021-02-14 19:46:35.664  INFO 15656 --- [http-nio-8080-exec-1] com.weilai.blog.aspect.LogAspect         : Result:index
+2021-02-14 19:46:47.647  INFO 15656 --- [http-nio-8080-exec-3] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/blog', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.blog', args=[]}
+2021-02-14 19:46:47.647  INFO 15656 --- [http-nio-8080-exec-3] com.weilai.blog.aspect.LogAspect         : Result:blog
+2021-02-14 19:47:08.692  INFO 15656 --- [http-nio-8080-exec-5] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.about', args=[]}
+2021-02-14 19:47:08.693  INFO 15656 --- [http-nio-8080-exec-5] com.weilai.blog.aspect.LogAspect         : Result:about
+2021-02-14 19:47:22.109  INFO 15656 --- [http-nio-8080-exec-9] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.archieves', args=[]}
+2021-02-14 19:47:22.109  INFO 15656 --- [http-nio-8080-exec-9] com.weilai.blog.aspect.LogAspect         : Result:archives
+2021-02-14 19:47:35.105  INFO 15656 --- [http-nio-8080-exec-8] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/blog', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.blog', args=[]}
+2021-02-14 19:47:35.105  INFO 15656 --- [http-nio-8080-exec-8] com.weilai.blog.aspect.LogAspect         : Result:blog
+2021-02-14 19:47:53.491  INFO 15656 --- [http-nio-8080-exec-3] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/tags', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.tags', args=[]}
+2021-02-14 19:47:53.492  INFO 15656 --- [http-nio-8080-exec-3] com.weilai.blog.aspect.LogAspect         : Result:tags
+2021-02-14 19:48:01.723  INFO 15656 --- [http-nio-8080-exec-6] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/types', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.types', args=[]}
+2021-02-14 19:48:01.724  INFO 15656 --- [http-nio-8080-exec-6] com.weilai.blog.aspect.LogAspect         : Result:types
+2021-02-14 19:48:30.149  INFO 15656 --- [http-nio-8080-exec-10] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/types', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.types', args=[]}
+2021-02-14 19:48:30.152  INFO 15656 --- [http-nio-8080-exec-10] com.weilai.blog.aspect.LogAspect         : Result:types
+2021-02-14 19:48:33.266  INFO 15656 --- [http-nio-8080-exec-9] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/types', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.types', args=[]}
+2021-02-14 19:48:33.267  INFO 15656 --- [http-nio-8080-exec-9] com.weilai.blog.aspect.LogAspect         : Result:types
+2021-02-14 19:49:15.390  INFO 15656 --- [http-nio-8080-exec-4] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.index', args=[]}
+2021-02-14 19:49:15.390  INFO 15656 --- [http-nio-8080-exec-4] com.weilai.blog.aspect.LogAspect         : Result:index
+2021-02-14 19:49:21.831  INFO 15656 --- [http-nio-8080-exec-2] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/blog', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.blog', args=[]}
+2021-02-14 19:49:21.832  INFO 15656 --- [http-nio-8080-exec-2] com.weilai.blog.aspect.LogAspect         : Result:blog
+2021-02-14 19:51:42.201  INFO 15656 --- [http-nio-8080-exec-10] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/tags', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.tags', args=[]}
+2021-02-14 19:51:42.202  INFO 15656 --- [http-nio-8080-exec-10] com.weilai.blog.aspect.LogAspect         : Result:tags
+2021-02-14 19:51:46.808  INFO 15656 --- [http-nio-8080-exec-1] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/tags', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.tags', args=[]}
+2021-02-14 19:51:46.808  INFO 15656 --- [http-nio-8080-exec-1] com.weilai.blog.aspect.LogAspect         : Result:tags
+2021-02-14 19:52:05.694  INFO 4920 --- [restartedMain] com.weilai.blog.BlogApplication          : Starting BlogApplication on DESKTOP-AP8AJHJ with PID 4920 (started by 君上 in C:\Users\君上\IdeaProjects\blog\blog_Weilai)
+2021-02-14 19:52:05.701  INFO 4920 --- [restartedMain] com.weilai.blog.BlogApplication          : The following profiles are active: dev
+2021-02-14 19:52:06.163  INFO 4920 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2c53517c: startup date [Sun Feb 14 19:52:06 AEDT 2021]; root of context hierarchy
+2021-02-14 19:52:09.291  INFO 4920 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2021-02-14 19:52:09.306  INFO 4920 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-14 19:52:09.307  INFO 4920 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2021-02-14 19:52:09.457  INFO 4920 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-14 19:52:09.457  INFO 4920 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3294 ms
+2021-02-14 19:52:09.723  INFO 4920 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-02-14 19:52:09.731  INFO 4920 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-02-14 19:52:09.732  INFO 4920 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-02-14 19:52:09.733  INFO 4920 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-02-14 19:52:09.733  INFO 4920 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-02-14 19:52:11.350  INFO 4920 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-02-14 19:52:11.371  INFO 4920 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-02-14 19:52:11.489  INFO 4920 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2021-02-14 19:52:11.490  INFO 4920 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-02-14 19:52:11.496  INFO 4920 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2021-02-14 19:52:11.570  INFO 4920 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-02-14 19:52:11.991  INFO 4920 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-02-14 19:52:12.228  INFO 4920 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2021-02-14 19:52:12.266  INFO 4920 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-14 19:52:13.333  INFO 4920 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2c53517c: startup date [Sun Feb 14 19:52:06 AEDT 2021]; root of context hierarchy
+2021-02-14 19:52:13.556  INFO 4920 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.index()
+2021-02-14 19:52:13.558  INFO 4920 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.types()
+2021-02-14 19:52:13.568  INFO 4920 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.tags()
+2021-02-14 19:52:13.570  INFO 4920 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/archives],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.archieves()
+2021-02-14 19:52:13.571  INFO 4920 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/about],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.about()
+2021-02-14 19:52:13.583  INFO 4920 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.blog()
+2021-02-14 19:52:13.592  INFO 4920 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-02-14 19:52:13.595  INFO 4920 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-02-14 19:52:13.720  INFO 4920 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-02-14 19:52:13.721  INFO 4920 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-02-14 19:52:13.799  INFO 4920 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2021-02-14 19:52:13.871  INFO 4920 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-02-14 19:52:15.320  INFO 4920 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-14 19:52:15.422  INFO 4920 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-02-14 19:52:15.517  INFO 4920 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2021-02-14 19:52:15.551  INFO 4920 --- [restartedMain] com.weilai.blog.BlogApplication          : Started BlogApplication in 10.916 seconds (JVM running for 16.643)
+2021-02-14 19:52:40.445  INFO 4920 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-02-14 19:52:40.446  INFO 4920 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-02-14 19:52:40.568  INFO 4920 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 122 ms
+2021-02-14 19:52:40.734  INFO 4920 --- [http-nio-8080-exec-1] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/tags', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.tags', args=[]}
+2021-02-14 19:52:40.741  INFO 4920 --- [http-nio-8080-exec-1] com.weilai.blog.aspect.LogAspect         : Result:tags
+2021-02-14 19:55:25.851  INFO 4920 --- [http-nio-8080-exec-8] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/types', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.types', args=[]}
+2021-02-14 19:55:25.852  INFO 4920 --- [http-nio-8080-exec-8] com.weilai.blog.aspect.LogAspect         : Result:types
+2021-02-14 20:00:12.012  INFO 688 --- [restartedMain] com.weilai.blog.BlogApplication          : Starting BlogApplication on DESKTOP-AP8AJHJ with PID 688 (started by 君上 in C:\Users\君上\IdeaProjects\blog\blog_Weilai)
+2021-02-14 20:00:12.035  INFO 688 --- [restartedMain] com.weilai.blog.BlogApplication          : The following profiles are active: dev
+2021-02-14 20:00:12.358  INFO 688 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4d953eee: startup date [Sun Feb 14 20:00:12 AEDT 2021]; root of context hierarchy
+2021-02-14 20:00:15.404  INFO 688 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2021-02-14 20:00:15.420  INFO 688 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-14 20:00:15.422  INFO 688 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2021-02-14 20:00:15.578  INFO 688 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-14 20:00:15.578  INFO 688 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3220 ms
+2021-02-14 20:00:15.829  INFO 688 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-02-14 20:00:15.838  INFO 688 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-02-14 20:00:15.838  INFO 688 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-02-14 20:00:15.839  INFO 688 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-02-14 20:00:15.839  INFO 688 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-02-14 20:00:17.117  INFO 688 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-02-14 20:00:17.140  INFO 688 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-02-14 20:00:17.255  INFO 688 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2021-02-14 20:00:17.257  INFO 688 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-02-14 20:00:17.258  INFO 688 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2021-02-14 20:00:17.310  INFO 688 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-02-14 20:00:17.559  INFO 688 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-02-14 20:00:17.758  INFO 688 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2021-02-14 20:00:17.796  INFO 688 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-14 20:00:18.465  INFO 688 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4d953eee: startup date [Sun Feb 14 20:00:12 AEDT 2021]; root of context hierarchy
+2021-02-14 20:00:18.608  INFO 688 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.index()
+2021-02-14 20:00:18.610  INFO 688 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.types()
+2021-02-14 20:00:18.610  INFO 688 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.tags()
+2021-02-14 20:00:18.611  INFO 688 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/archives],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.archieves()
+2021-02-14 20:00:18.611  INFO 688 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.blog()
+2021-02-14 20:00:18.611  INFO 688 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/about],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.about()
+2021-02-14 20:00:18.618  INFO 688 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-02-14 20:00:18.619  INFO 688 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-02-14 20:00:18.687  INFO 688 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-02-14 20:00:18.688  INFO 688 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-02-14 20:00:18.725  INFO 688 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2021-02-14 20:00:18.766  INFO 688 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-02-14 20:00:19.829  INFO 688 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-14 20:00:19.936  INFO 688 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-02-14 20:00:20.006  INFO 688 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2021-02-14 20:00:20.010  INFO 688 --- [restartedMain] com.weilai.blog.BlogApplication          : Started BlogApplication in 8.874 seconds (JVM running for 11.551)
+2021-02-14 20:00:24.176  INFO 688 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-02-14 20:00:24.177  INFO 688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-02-14 20:00:24.224  INFO 688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 47 ms
+2021-02-14 20:00:24.354  INFO 688 --- [http-nio-8080-exec-1] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/types', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.types', args=[]}
+2021-02-14 20:00:24.357  INFO 688 --- [http-nio-8080-exec-1] com.weilai.blog.aspect.LogAspect         : Result:types
+2021-02-14 20:00:28.674  INFO 688 --- [http-nio-8080-exec-4] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.index', args=[]}
+2021-02-14 20:00:28.675  INFO 688 --- [http-nio-8080-exec-4] com.weilai.blog.aspect.LogAspect         : Result:index
+2021-02-14 20:02:06.800  INFO 688 --- [http-nio-8080-exec-2] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.about', args=[]}
+2021-02-14 20:02:06.800  INFO 688 --- [http-nio-8080-exec-2] com.weilai.blog.aspect.LogAspect         : Result:about
+2021-02-14 20:03:15.536  INFO 688 --- [http-nio-8080-exec-10] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.archieves', args=[]}
+2021-02-14 20:03:15.537  INFO 688 --- [http-nio-8080-exec-10] com.weilai.blog.aspect.LogAspect         : Result:archives
+2021-02-14 20:03:18.270  INFO 688 --- [http-nio-8080-exec-9] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.archieves', args=[]}
+2021-02-14 20:03:18.271  INFO 688 --- [http-nio-8080-exec-9] com.weilai.blog.aspect.LogAspect         : Result:archives
+2021-02-14 20:03:19.772  INFO 688 --- [http-nio-8080-exec-3] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.archieves', args=[]}
+2021-02-14 20:03:19.772  INFO 688 --- [http-nio-8080-exec-3] com.weilai.blog.aspect.LogAspect         : Result:archives
+2021-02-14 20:03:21.378  INFO 688 --- [http-nio-8080-exec-2] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.archieves', args=[]}
+2021-02-14 20:03:21.382  INFO 688 --- [http-nio-8080-exec-2] com.weilai.blog.aspect.LogAspect         : Result:archives
+2021-02-14 20:03:28.901  INFO 688 --- [http-nio-8080-exec-7] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/blog', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.blog', args=[]}
+2021-02-14 20:03:28.902  INFO 688 --- [http-nio-8080-exec-7] com.weilai.blog.aspect.LogAspect         : Result:blog
+2021-02-14 20:03:45.527  INFO 688 --- [http-nio-8080-exec-5] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.index', args=[]}
+2021-02-14 20:03:45.528  INFO 688 --- [http-nio-8080-exec-5] com.weilai.blog.aspect.LogAspect         : Result:index
+2021-02-14 20:03:51.824  INFO 688 --- [http-nio-8080-exec-3] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/tags', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.tags', args=[]}
+2021-02-14 20:03:51.825  INFO 688 --- [http-nio-8080-exec-3] com.weilai.blog.aspect.LogAspect         : Result:tags
+2021-02-14 20:04:43.093  INFO 688 --- [http-nio-8080-exec-8] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.index', args=[]}
+2021-02-14 20:04:43.093  INFO 688 --- [http-nio-8080-exec-8] com.weilai.blog.aspect.LogAspect         : Result:index
+2021-02-14 20:06:37.707  INFO 1464 --- [restartedMain] com.weilai.blog.BlogApplication          : Starting BlogApplication on DESKTOP-AP8AJHJ with PID 1464 (started by 君上 in C:\Users\君上\IdeaProjects\blog\blog_Weilai)
+2021-02-14 20:06:37.707  INFO 1464 --- [restartedMain] com.weilai.blog.BlogApplication          : The following profiles are active: dev
+2021-02-14 20:06:37.949  INFO 1464 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7bc50a30: startup date [Sun Feb 14 20:06:37 AEDT 2021]; root of context hierarchy
+2021-02-14 20:06:39.625  INFO 1464 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2021-02-14 20:06:39.635  INFO 1464 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-14 20:06:39.635  INFO 1464 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2021-02-14 20:06:39.735  INFO 1464 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-14 20:06:39.735  INFO 1464 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1786 ms
+2021-02-14 20:06:39.875  INFO 1464 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-02-14 20:06:39.885  INFO 1464 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-02-14 20:06:39.885  INFO 1464 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-02-14 20:06:39.885  INFO 1464 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-02-14 20:06:39.885  INFO 1464 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-02-14 20:06:40.735  INFO 1464 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-02-14 20:06:40.745  INFO 1464 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-02-14 20:06:40.805  INFO 1464 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2021-02-14 20:06:40.805  INFO 1464 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-02-14 20:06:40.805  INFO 1464 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2021-02-14 20:06:40.845  INFO 1464 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-02-14 20:06:41.005  INFO 1464 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-02-14 20:06:41.147  INFO 1464 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2021-02-14 20:06:41.157  INFO 1464 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-14 20:06:41.565  INFO 1464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7bc50a30: startup date [Sun Feb 14 20:06:37 AEDT 2021]; root of context hierarchy
+2021-02-14 20:06:41.635  INFO 1464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.index()
+2021-02-14 20:06:41.645  INFO 1464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.types()
+2021-02-14 20:06:41.645  INFO 1464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.tags()
+2021-02-14 20:06:41.645  INFO 1464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.blog()
+2021-02-14 20:06:41.645  INFO 1464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/archives],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.archieves()
+2021-02-14 20:06:41.645  INFO 1464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/about],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.about()
+2021-02-14 20:06:41.645  INFO 1464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-02-14 20:06:41.645  INFO 1464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-02-14 20:06:41.685  INFO 1464 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-02-14 20:06:41.685  INFO 1464 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-02-14 20:06:41.695  INFO 1464 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2021-02-14 20:06:41.715  INFO 1464 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-02-14 20:06:42.375  INFO 1464 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-14 20:06:42.435  INFO 1464 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-02-14 20:06:42.485  INFO 1464 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2021-02-14 20:06:42.485  INFO 1464 --- [restartedMain] com.weilai.blog.BlogApplication          : Started BlogApplication in 5.243 seconds (JVM running for 6.746)
+2021-02-14 20:10:21.474  INFO 1464 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-02-14 20:10:21.474  INFO 1464 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-02-14 20:10:21.520  INFO 1464 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 46 ms
+2021-02-14 20:10:21.643  INFO 1464 --- [http-nio-8080-exec-1] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.index', args=[]}
+2021-02-14 20:10:21.652  INFO 1464 --- [http-nio-8080-exec-1] com.weilai.blog.aspect.LogAspect         : Result:index
+2021-02-14 20:10:39.340  INFO 1464 --- [http-nio-8080-exec-5] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.about', args=[]}
+2021-02-14 20:10:39.344  INFO 1464 --- [http-nio-8080-exec-5] com.weilai.blog.aspect.LogAspect         : Result:about
+2021-02-14 20:11:47.499  INFO 1464 --- [http-nio-8080-exec-5] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.about', args=[]}
+2021-02-14 20:11:47.500  INFO 1464 --- [http-nio-8080-exec-5] com.weilai.blog.aspect.LogAspect         : Result:about
+2021-02-14 20:12:06.337  INFO 1464 --- [http-nio-8080-exec-9] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.archieves', args=[]}
+2021-02-14 20:12:06.338  INFO 1464 --- [http-nio-8080-exec-9] com.weilai.blog.aspect.LogAspect         : Result:archives
+2021-02-14 20:12:13.976  INFO 1464 --- [http-nio-8080-exec-8] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/blog', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.blog', args=[]}
+2021-02-14 20:12:13.978  INFO 1464 --- [http-nio-8080-exec-8] com.weilai.blog.aspect.LogAspect         : Result:blog
+2021-02-14 20:15:33.110  INFO 1464 --- [http-nio-8080-exec-3] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/blog', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.blog', args=[]}
+2021-02-14 20:15:33.110  INFO 1464 --- [http-nio-8080-exec-3] com.weilai.blog.aspect.LogAspect         : Result:blog
+2021-02-14 20:15:40.677  INFO 1464 --- [http-nio-8080-exec-4] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.index', args=[]}
+2021-02-14 20:15:40.688  INFO 1464 --- [http-nio-8080-exec-4] com.weilai.blog.aspect.LogAspect         : Result:index
+2021-02-14 20:15:43.525  INFO 1464 --- [http-nio-8080-exec-1] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/tags', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.tags', args=[]}
+2021-02-14 20:15:43.525  INFO 1464 --- [http-nio-8080-exec-1] com.weilai.blog.aspect.LogAspect         : Result:tags
+2021-02-14 20:16:02.588  INFO 1464 --- [http-nio-8080-exec-1] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/types', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.types', args=[]}
+2021-02-14 20:16:02.588  INFO 1464 --- [http-nio-8080-exec-1] com.weilai.blog.aspect.LogAspect         : Result:types
