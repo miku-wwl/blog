@@ -39,6 +39,29 @@ public class indexController {
         return "types";
     }
 
+    @GetMapping("/admin/index")
+    public String admin_index(){
+
+        return "admin/index";
+    }
+    @GetMapping("/admin/login")
+    public String admin_login(){
+
+        return "admin/login";
+    }
+
+    @GetMapping("/admin/blogs")
+    public String admin_blogs(){
+
+        return "admin/blogs";
+    }
+    @GetMapping("/admin/blogs-input")
+    public String admin_blogs_input(){
+
+        return "admin/blogs-input";
+    }
+
+
 
 
 }
