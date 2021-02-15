@@ -32,7 +32,7 @@
 
                     <i class="dropdown icon"></i>
                     <div class="menu">
-                        <a href="" class="item">注销</a>
+                        <a href="" th:href="@{/admin/logout}" class="item">注销</a>
                     </div>
 
                 </div>
@@ -46,17 +46,7 @@
 </nav>
 <!---->
 
-<!-- 二级导航 -->
-<div class="ui attached pointing menu">
-    <div class="ui container">
-        <div class="right menu">
-            <a href="#" class="item">发布</a>
-            <a href="#" class="item active teal">列表</a>
-        </div>
-       
-    </div>
-  
-</div>
+
 
 
 <!--中间内容-->
@@ -99,6 +89,8 @@
     $('.ui.dropdown').dropdown({
         on  : 'hover'
     });
+
+
 
 
 </script>
