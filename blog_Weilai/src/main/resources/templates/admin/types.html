@@ -112,7 +112,7 @@
 <!--                        <a th:href="@{/admin/types(page=${page.number}-1})}" class="item" > 上一页</a>-->
 <!--                        <a th:href="@{/admin/types(page=${page.number}+1})}" class="item"> 下一页</a>-->
 <!--                        -->
-                        <a class="item" > 上一页</a>
+                        <a th:href="@{/admin/types(page=${page.number}-1})}" class="item" > 上一页</a>
                         <a th:href="@{/admin/types(page=${page.number}+1})}" class="item"> 下一页</a>
 
                     </div>
