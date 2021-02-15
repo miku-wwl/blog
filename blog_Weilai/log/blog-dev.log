@@ -12748,3 +12748,224 @@ org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as express
 2021-02-15 23:21:38.657  INFO 18412 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
 2021-02-15 23:21:38.771  INFO 18412 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
 2021-02-15 23:21:38.778  INFO 18412 --- [restartedMain] com.weilai.blog.BlogApplication          : Started BlogApplication in 15.866 seconds (JVM running for 18.579)
+2021-02-15 23:48:27.356  INFO 7904 --- [restartedMain] com.weilai.blog.BlogApplication          : Starting BlogApplication on DESKTOP-AP8AJHJ with PID 7904 (started by 君上 in C:\Users\君上\IdeaProjects\blog\blog_Weilai)
+2021-02-15 23:48:27.356  INFO 7904 --- [restartedMain] com.weilai.blog.BlogApplication          : The following profiles are active: dev
+2021-02-15 23:48:27.716  INFO 7904 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5bf8ccc9: startup date [Mon Feb 15 23:48:27 AEDT 2021]; root of context hierarchy
+2021-02-15 23:48:29.466  INFO 7904 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2021-02-15 23:48:29.476  INFO 7904 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-15 23:48:29.476  INFO 7904 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2021-02-15 23:48:29.576  INFO 7904 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-15 23:48:29.576  INFO 7904 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1860 ms
+2021-02-15 23:48:29.736  INFO 7904 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-02-15 23:48:29.736  INFO 7904 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-02-15 23:48:29.736  INFO 7904 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-02-15 23:48:29.736  INFO 7904 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-02-15 23:48:29.736  INFO 7904 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-02-15 23:48:30.636  INFO 7904 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-02-15 23:48:30.646  INFO 7904 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-02-15 23:48:30.716  INFO 7904 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2021-02-15 23:48:30.716  INFO 7904 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-02-15 23:48:30.716  INFO 7904 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2021-02-15 23:48:30.756  INFO 7904 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-02-15 23:48:31.056  INFO 7904 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-02-15 23:48:31.426  INFO 7904 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2021-02-15 23:48:31.726  INFO 7904 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-15 23:48:32.466  INFO 7904 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5bf8ccc9: startup date [Mon Feb 15 23:48:27 AEDT 2021]; root of context hierarchy
+2021-02-15 23:48:32.536  INFO 7904 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.admin.BlogController.blogs()
+2021-02-15 23:48:32.536  INFO 7904 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String com.weilai.blog.web.admin.LoginController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes,org.springframework.ui.Model)
+2021-02-15 23:48:32.536  INFO 7904 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/logout],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.admin.LoginController.logout(javax.servlet.http.HttpSession)
+2021-02-15 23:48:32.536  INFO 7904 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.admin.LoginController.loginPage()
+2021-02-15 23:48:32.536  INFO 7904 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.admin.TypeController.types(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2021-02-15 23:48:32.536  INFO 7904 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[POST]}" onto public java.lang.String com.weilai.blog.web.admin.TypeController.post(com.weilai.blog.po.Type)
+2021-02-15 23:48:32.536  INFO 7904 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/input],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.admin.TypeController.input()
+2021-02-15 23:48:32.536  INFO 7904 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.types()
+2021-02-15 23:48:32.536  INFO 7904 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.tags()
+2021-02-15 23:48:32.536  INFO 7904 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.blog()
+2021-02-15 23:48:32.536  INFO 7904 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/about],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.about()
+2021-02-15 23:48:32.546  INFO 7904 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/index],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.admin_index()
+2021-02-15 23:48:32.546  INFO 7904 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.admin_login()
+2021-02-15 23:48:32.546  INFO 7904 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/archives],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.archieves()
+2021-02-15 23:48:32.546  INFO 7904 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs-input],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.admin_blogs_input()
+2021-02-15 23:48:32.546  INFO 7904 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.index()
+2021-02-15 23:48:32.546  INFO 7904 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-02-15 23:48:32.546  INFO 7904 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-02-15 23:48:32.586  INFO 7904 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-02-15 23:48:32.586  INFO 7904 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-02-15 23:48:32.596  INFO 7904 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2021-02-15 23:48:32.626  INFO 7904 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-02-15 23:48:33.307  INFO 7904 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-15 23:48:33.357  INFO 7904 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-02-15 23:48:33.407  INFO 7904 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2021-02-15 23:48:33.407  INFO 7904 --- [restartedMain] com.weilai.blog.BlogApplication          : Started BlogApplication in 6.511 seconds (JVM running for 8.057)
+2021-02-15 23:49:21.093  INFO 7904 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-02-15 23:49:21.094  INFO 7904 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-02-15 23:49:21.141  INFO 7904 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 47 ms
+2021-02-15 23:49:21.178  INFO 7904 --- [http-nio-8080-exec-1] com.weilai.blog.aspect.LogAspect         : Request:RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.weilai.blog.web.indexController.index', args=[]}
+2021-02-15 23:49:21.182  INFO 7904 --- [http-nio-8080-exec-1] com.weilai.blog.aspect.LogAspect         : Result:index
+2021-02-15 23:49:36.628  INFO 7904 --- [http-nio-8080-exec-9] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-02-15 23:52:40.525  INFO 13908 --- [restartedMain] com.weilai.blog.BlogApplication          : Starting BlogApplication on DESKTOP-AP8AJHJ with PID 13908 (started by 君上 in C:\Users\君上\IdeaProjects\blog\blog_Weilai)
+2021-02-15 23:52:40.526  INFO 13908 --- [restartedMain] com.weilai.blog.BlogApplication          : The following profiles are active: dev
+2021-02-15 23:52:41.007  INFO 13908 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4f1a9a37: startup date [Mon Feb 15 23:52:41 AEDT 2021]; root of context hierarchy
+2021-02-15 23:52:45.937  INFO 13908 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2021-02-15 23:52:45.959  INFO 13908 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-15 23:52:45.964  INFO 13908 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2021-02-15 23:52:46.256  INFO 13908 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-15 23:52:46.257  INFO 13908 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5250 ms
+2021-02-15 23:52:46.755  INFO 13908 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-02-15 23:52:46.773  INFO 13908 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-02-15 23:52:46.773  INFO 13908 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-02-15 23:52:46.774  INFO 13908 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-02-15 23:52:46.774  INFO 13908 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-02-15 23:52:48.740  INFO 13908 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-02-15 23:52:48.818  INFO 13908 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-02-15 23:52:49.185  INFO 13908 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2021-02-15 23:52:49.188  INFO 13908 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-02-15 23:52:49.189  INFO 13908 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2021-02-15 23:52:49.284  INFO 13908 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-02-15 23:52:49.836  INFO 13908 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-02-15 23:52:51.057  INFO 13908 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2021-02-15 23:52:51.905  INFO 13908 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-15 23:52:53.939  INFO 13908 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4f1a9a37: startup date [Mon Feb 15 23:52:41 AEDT 2021]; root of context hierarchy
+2021-02-15 23:52:54.051  INFO 13908 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.admin.BlogController.blogs()
+2021-02-15 23:52:54.054  INFO 13908 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.admin.LoginController.loginPage()
+2021-02-15 23:52:54.056  INFO 13908 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String com.weilai.blog.web.admin.LoginController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes,org.springframework.ui.Model)
+2021-02-15 23:52:54.057  INFO 13908 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/logout],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.admin.LoginController.logout(javax.servlet.http.HttpSession)
+2021-02-15 23:52:54.058  INFO 13908 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/input],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.admin.TypeController.input()
+2021-02-15 23:52:54.058  INFO 13908 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.admin.TypeController.types(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2021-02-15 23:52:54.059  INFO 13908 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[POST]}" onto public java.lang.String com.weilai.blog.web.admin.TypeController.post(com.weilai.blog.po.Type)
+2021-02-15 23:52:54.063  INFO 13908 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.index()
+2021-02-15 23:52:54.064  INFO 13908 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/about],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.about()
+2021-02-15 23:52:54.064  INFO 13908 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.blog()
+2021-02-15 23:52:54.065  INFO 13908 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/archives],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.archieves()
+2021-02-15 23:52:54.065  INFO 13908 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.admin_login()
+2021-02-15 23:52:54.065  INFO 13908 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/index],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.admin_index()
+2021-02-15 23:52:54.066  INFO 13908 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.types()
+2021-02-15 23:52:54.066  INFO 13908 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.tags()
+2021-02-15 23:52:54.066  INFO 13908 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs-input],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.admin_blogs_input()
+2021-02-15 23:52:54.068  INFO 13908 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-02-15 23:52:54.068  INFO 13908 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-02-15 23:52:54.137  INFO 13908 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-02-15 23:52:54.137  INFO 13908 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-02-15 23:52:54.168  INFO 13908 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2021-02-15 23:52:54.216  INFO 13908 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-02-15 23:52:55.218  INFO 13908 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-15 23:52:55.274  INFO 13908 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-02-15 23:52:55.347  INFO 13908 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2021-02-15 23:52:55.354  INFO 13908 --- [restartedMain] com.weilai.blog.BlogApplication          : Started BlogApplication in 15.884 seconds (JVM running for 18.979)
+2021-02-15 23:52:55.479  INFO 13908 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-02-15 23:52:55.479  INFO 13908 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-02-15 23:52:55.515  INFO 13908 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 36 ms
+2021-02-15 23:53:00.716  INFO 13908 --- [http-nio-8080-exec-10] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-02-15 23:53:39.613  INFO 13144 --- [restartedMain] com.weilai.blog.BlogApplication          : Starting BlogApplication on DESKTOP-AP8AJHJ with PID 13144 (started by 君上 in C:\Users\君上\IdeaProjects\blog\blog_Weilai)
+2021-02-15 23:53:39.613  INFO 13144 --- [restartedMain] com.weilai.blog.BlogApplication          : The following profiles are active: dev
+2021-02-15 23:53:39.943  INFO 13144 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1bd6b99c: startup date [Mon Feb 15 23:53:39 AEDT 2021]; root of context hierarchy
+2021-02-15 23:53:43.250  INFO 13144 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2021-02-15 23:53:43.260  INFO 13144 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-15 23:53:43.270  INFO 13144 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2021-02-15 23:53:43.400  INFO 13144 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-15 23:53:43.400  INFO 13144 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3457 ms
+2021-02-15 23:53:43.600  INFO 13144 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-02-15 23:53:43.600  INFO 13144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-02-15 23:53:43.600  INFO 13144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-02-15 23:53:43.600  INFO 13144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-02-15 23:53:43.600  INFO 13144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-02-15 23:53:44.746  INFO 13144 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-02-15 23:53:44.765  INFO 13144 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-02-15 23:53:44.850  INFO 13144 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2021-02-15 23:53:44.853  INFO 13144 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-02-15 23:53:44.854  INFO 13144 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2021-02-15 23:53:44.896  INFO 13144 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-02-15 23:53:45.151  INFO 13144 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-02-15 23:53:45.633  INFO 13144 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2021-02-15 23:53:46.031  INFO 13144 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-15 23:53:46.996  INFO 13144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1bd6b99c: startup date [Mon Feb 15 23:53:39 AEDT 2021]; root of context hierarchy
+2021-02-15 23:53:47.066  INFO 13144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.admin.BlogController.blogs()
+2021-02-15 23:53:47.076  INFO 13144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.admin.LoginController.loginPage()
+2021-02-15 23:53:47.076  INFO 13144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String com.weilai.blog.web.admin.LoginController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes,org.springframework.ui.Model)
+2021-02-15 23:53:47.076  INFO 13144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/logout],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.admin.LoginController.logout(javax.servlet.http.HttpSession)
+2021-02-15 23:53:47.076  INFO 13144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/input],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.admin.TypeController.input()
+2021-02-15 23:53:47.076  INFO 13144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.admin.TypeController.types(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2021-02-15 23:53:47.076  INFO 13144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[POST]}" onto public java.lang.String com.weilai.blog.web.admin.TypeController.post(com.weilai.blog.po.Type)
+2021-02-15 23:53:47.076  INFO 13144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.index()
+2021-02-15 23:53:47.086  INFO 13144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.types()
+2021-02-15 23:53:47.086  INFO 13144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.tags()
+2021-02-15 23:53:47.086  INFO 13144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs-input],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.admin_blogs_input()
+2021-02-15 23:53:47.086  INFO 13144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.blog()
+2021-02-15 23:53:47.086  INFO 13144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.admin_login()
+2021-02-15 23:53:47.086  INFO 13144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/archives],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.archieves()
+2021-02-15 23:53:47.086  INFO 13144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/about],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.about()
+2021-02-15 23:53:47.086  INFO 13144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/index],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.admin_index()
+2021-02-15 23:53:47.086  INFO 13144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-02-15 23:53:47.086  INFO 13144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-02-15 23:53:47.136  INFO 13144 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-02-15 23:53:47.136  INFO 13144 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-02-15 23:53:47.156  INFO 13144 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2021-02-15 23:53:47.186  INFO 13144 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-02-15 23:53:48.003  INFO 13144 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-15 23:53:48.053  INFO 13144 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-02-15 23:53:48.113  INFO 13144 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2021-02-15 23:53:48.123  INFO 13144 --- [restartedMain] com.weilai.blog.BlogApplication          : Started BlogApplication in 9.18 seconds (JVM running for 11.386)
+2021-02-15 23:54:16.041  INFO 13144 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-02-15 23:54:16.044  INFO 13144 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-02-15 23:54:16.079  INFO 13144 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 35 ms
+2021-02-15 23:54:45.797  INFO 7140 --- [restartedMain] com.weilai.blog.BlogApplication          : Starting BlogApplication on DESKTOP-AP8AJHJ with PID 7140 (started by 君上 in C:\Users\君上\IdeaProjects\blog\blog_Weilai)
+2021-02-15 23:54:45.797  INFO 7140 --- [restartedMain] com.weilai.blog.BlogApplication          : The following profiles are active: dev
+2021-02-15 23:54:46.060  INFO 7140 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5c03b45e: startup date [Mon Feb 15 23:54:46 AEDT 2021]; root of context hierarchy
+2021-02-15 23:54:48.157  INFO 7140 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2021-02-15 23:54:48.167  INFO 7140 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-15 23:54:48.167  INFO 7140 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2021-02-15 23:54:48.277  INFO 7140 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-15 23:54:48.277  INFO 7140 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2217 ms
+2021-02-15 23:54:48.467  INFO 7140 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-02-15 23:54:48.477  INFO 7140 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-02-15 23:54:48.477  INFO 7140 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-02-15 23:54:48.477  INFO 7140 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-02-15 23:54:48.477  INFO 7140 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-02-15 23:54:49.477  INFO 7140 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-02-15 23:54:49.487  INFO 7140 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-02-15 23:54:49.567  INFO 7140 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2021-02-15 23:54:49.577  INFO 7140 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-02-15 23:54:49.577  INFO 7140 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2021-02-15 23:54:49.617  INFO 7140 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-02-15 23:54:49.827  INFO 7140 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-02-15 23:54:50.257  INFO 7140 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2021-02-15 23:54:50.607  INFO 7140 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-15 23:54:51.467  INFO 7140 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5c03b45e: startup date [Mon Feb 15 23:54:46 AEDT 2021]; root of context hierarchy
+2021-02-15 23:54:51.538  INFO 7140 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.admin.BlogController.blogs()
+2021-02-15 23:54:51.547  INFO 7140 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/logout],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.admin.LoginController.logout(javax.servlet.http.HttpSession)
+2021-02-15 23:54:51.547  INFO 7140 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.admin.LoginController.loginPage()
+2021-02-15 23:54:51.547  INFO 7140 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String com.weilai.blog.web.admin.LoginController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes,org.springframework.ui.Model)
+2021-02-15 23:54:51.547  INFO 7140 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/input],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.admin.TypeController.input()
+2021-02-15 23:54:51.547  INFO 7140 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.admin.TypeController.types(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2021-02-15 23:54:51.547  INFO 7140 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[POST]}" onto public java.lang.String com.weilai.blog.web.admin.TypeController.post(com.weilai.blog.po.Type)
+2021-02-15 23:54:51.547  INFO 7140 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.index()
+2021-02-15 23:54:51.547  INFO 7140 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.types()
+2021-02-15 23:54:51.547  INFO 7140 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.tags()
+2021-02-15 23:54:51.547  INFO 7140 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs-input],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.admin_blogs_input()
+2021-02-15 23:54:51.547  INFO 7140 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/about],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.about()
+2021-02-15 23:54:51.547  INFO 7140 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/index],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.admin_index()
+2021-02-15 23:54:51.558  INFO 7140 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/archives],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.archieves()
+2021-02-15 23:54:51.558  INFO 7140 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.admin_login()
+2021-02-15 23:54:51.558  INFO 7140 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog],methods=[GET]}" onto public java.lang.String com.weilai.blog.web.indexController.blog()
+2021-02-15 23:54:51.558  INFO 7140 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-02-15 23:54:51.558  INFO 7140 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-02-15 23:54:51.597  INFO 7140 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-02-15 23:54:51.597  INFO 7140 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-02-15 23:54:51.618  INFO 7140 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2021-02-15 23:54:51.648  INFO 7140 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-02-15 23:54:52.437  INFO 7140 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-15 23:54:52.478  INFO 7140 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-02-15 23:54:52.538  INFO 7140 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2021-02-15 23:54:52.538  INFO 7140 --- [restartedMain] com.weilai.blog.BlogApplication          : Started BlogApplication in 7.321 seconds (JVM running for 8.995)
+2021-02-15 23:55:10.428  INFO 7140 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-02-15 23:55:10.429  INFO 7140 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-02-15 23:55:10.459  INFO 7140 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2021-02-15 23:55:14.009  INFO 7140 --- [http-nio-8080-exec-7] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
