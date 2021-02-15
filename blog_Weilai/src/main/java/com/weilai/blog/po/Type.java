@@ -1,5 +1,6 @@
 package com.weilai.blog.po;
 
+import org.hibernate.validator.constraints.NotBlank;
 
 import javax.persistence.*;
 import java.util.ArrayList;

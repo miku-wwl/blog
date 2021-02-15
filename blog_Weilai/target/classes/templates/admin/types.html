@@ -16,9 +16,9 @@
     <div class="ui contain">
         <div class="ui inverted secondary stackable menu">
             <h2 class="ui teal header item">管理后台</h2>
-            <a href="#" class="active m-item item m-mobile-hide"><i class="home icon"> </i>博客</a>
-            <a href="#" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
-            <a href="#" class="m-item item m-mobile-hide"><i class="tag icon"></i>标签</a>
+            <a th:href="@{/admin/blogs}" href="#" class="active m-item item m-mobile-hide"><i class="home icon"> </i>博客</a>
+            <a th:href="@{/admin/types}" href="#" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
+            <a th:href="@{/admin/tags}"   href="#" class="m-item item m-mobile-hide"><i class="tag icon"></i>标签</a>
             
 
 
@@ -31,7 +31,7 @@
 
                     <i class="dropdown icon"></i>
                     <div class="menu">
-                        <a href="" class="item">注销</a>
+                        <a href="" th:href="@{/admin/logout}" class="item">注销</a>
                     </div>
 
                 </div>
@@ -71,30 +71,7 @@
                 </tr>
             </thead>
 
-<!--            <tbody>-->
-<!--                <tr th:each="type,iterStat :${page.content}">-->
-<!--                    <td th:text="${iterStat.count}">1</td>-->
-<!--                    <td th:text="${type.name}">刻意练习清单</td>-->
-<!--                    <td>-->
-<!--                        <a href="#" th:href="@{/admin/types/{id}/input(id=${type.id})} "  class="ui mini teal basic button">编辑</a>-->
-<!--                        <a href="#" th:href="@{/admin/types/{id}/delete(id=${type.id})} " class="ui mini red basic button">删除</a>-->
-<!--                    </td>-->
-<!--                </tr>-->
-<!--            </tbody>-->
-<!--            <tfoot>-->
-<!--                <tr>-->
-<!--                    <th colspan="6">-->
-<!--                        <div class="ui mini pagination menu">-->
-<!--                            <a th:href="@{/admin/types(page=${page.number}-1})}" class="item" > 上一页</a>-->
-<!--                            <a th:href="@{/admin/types(page=${page.number}+1})}" class="item"> 下一页</a>-->
 
-
-<!--                        </div>-->
-<!--                        <a th:href="@{/admin/types/input} "  class="ui right floated teal basic button">新增</a>-->
-<!--                    </th>-->
-<!--                </tr>-->
-<!--            </tfoot>-->
-<!--            -->
             <tbody>
             <tr th:each="type,iterStat :${page.content}" >
                 <td th:text="${iterStat.count}">1</td>
@@ -108,12 +85,12 @@
             <tfoot>
             <tr>
                 <th colspan="6">
-                    <div class="ui mini pagination menu">
-<!--                        <a th:href="@{/admin/types(page=${page.number}-1})}" class="item" > 上一页</a>-->
-<!--                        <a th:href="@{/admin/types(page=${page.number}+1})}" class="item"> 下一页</a>-->
-<!--                        -->
-                        <a class="item" > 上一页</a>
+                    <div class="ui mini pagination menu" th:if="${page.totalPages}>1">
+
+                        <a th:href="@{/admin/types(page=${page.number}-1})}" class="item" > 上一页</a>
                         <a th:href="@{/admin/types(page=${page.number}+1})}" class="item"> 下一页</a>
+
+
 
                     </div>
                     <a  th:href="@{/admin/types/input} " class="ui right floated teal basic button">新增</a>
