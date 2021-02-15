@@ -50,11 +50,7 @@ public class indexController {
         return "admin/login";
     }
 
-    @GetMapping("/admin/blogs")
-    public String admin_blogs(){
 
-        return "admin/blogs";
-    }
     @GetMapping("/admin/blogs-input")
     public String admin_blogs_input(){
 
