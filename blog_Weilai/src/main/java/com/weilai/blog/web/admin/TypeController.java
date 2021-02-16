@@ -39,6 +39,11 @@ public class TypeController {
 
     @PostMapping("/types")
     public String post(@Valid Type type, BindingResult result,RedirectAttributes attributes){
+        Type type1 = typeService.getTypeByName(type.getName());
+        if (type1 !=null){
+            result.rejectValue("name","nameError","不能重复添加分类");
+        }
+
         if (result.hasErrors()){
             return "admin/types-input";
         }
